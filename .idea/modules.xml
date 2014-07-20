@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyUI.iml" filepath="$PROJECT_DIR$/MyUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui01/ui01.iml" filepath="$PROJECT_DIR$/ui01/ui01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui02_drawable/ui02_drawable.iml" filepath="$PROJECT_DIR$/ui02_drawable/ui02_drawable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui03_9path/ui03_9path.iml" filepath="$PROJECT_DIR$/ui03_9path/ui03_9path.iml" />
+    </modules>
+  </component>
+</project>
+
