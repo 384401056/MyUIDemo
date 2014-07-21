@@ -32,7 +32,11 @@ public class MyDrawable extends View {
         this.con = context;
         mBitmapDrawable = new BitmapDrawable();
         mBitmapDrawable = (BitmapDrawable)getResources().getDrawable(R.drawable.mm);
-        mBitmapDrawable.setBounds(0,0,350,240);
+        /*
+        * Drawable对象一定要设置Bounds属性
+        * 其中getIntrinsicWidth()和getIntrinsicHeight()就是得到原始图片的苋和高。
+        */
+        mBitmapDrawable.setBounds(0,0,mBitmapDrawable.getIntrinsicWidth(),mBitmapDrawable.getIntrinsicHeight());
     }
 
 

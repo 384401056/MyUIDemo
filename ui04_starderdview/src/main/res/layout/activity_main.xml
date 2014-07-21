@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="Html格式化显示TextView内容的方式："
+        />
+
+    <TextView
+        android:id="@+id/tv01"
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fdfdfd"
+        android:layout_margin="10dp"
+        android:autoLink=""
+        android:textSize="12sp"
+        android:background="@drawable/tvbackground"
+        />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="Span格式化TextView的方式："
+        />
+
+    <TextView
+        android:id="@+id/tv02"
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fdfdfd"
+        android:layout_margin="10dp"
+        android:textSize="12sp"
+        android:textColorLink="#ff76d1ff"
+        android:autoLink="email"
+        android:background="@drawable/tvbackground"
+        />
+
+</LinearLayout>

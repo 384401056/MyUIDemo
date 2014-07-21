@@ -1,4 +1,4 @@
-package com.blueicehunter.myapplication;
+package com.blueicehunter.ui04_starderdview;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
