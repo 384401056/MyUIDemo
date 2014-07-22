@@ -41,4 +41,30 @@
         android:background="@drawable/tvbackground"
         />
 
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="跑马灯效果"
+        />
+
+    <TextView
+        android:id="@+id/tv03"
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff338f23"
+        android:layout_margin="10dp"
+        android:textSize="12sp"
+        android:textColorLink="#ff76d1ff"
+        android:autoLink="email"
+
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        />
+
+
 </LinearLayout>

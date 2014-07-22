@@ -24,8 +24,7 @@ import java.util.MissingFormatArgumentException;
 
 public class MainActivity extends Activity {
 
-    private TextView tv01;
-    private TextView tv02;
+    private TextView tv01,tv02,tv03;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +33,11 @@ public class MainActivity extends Activity {
 
         tv01 = (TextView)findViewById(R.id.tv01);
         tv02 = (TextView)findViewById(R.id.tv02);
+        tv03 = (TextView)findViewById(R.id.tv03);
 
         this.showTextViewByHtml();
         this.showTextViewBySpan();
+        this.showTextViewByMarquee();
 
     }
 
@@ -144,4 +145,76 @@ public class MainActivity extends Activity {
         tv02.setText(spanBuilder);
     }
 
+
+    /**
+     * 以路马灯的方式显示TextView中的内容
+     */
+    private void showTextViewByMarquee(){
+
+        /* 只有加上其它形式的autoLink，clickableSpan才会起作用，不知为何。 */
+        String str = "今天天气很好啊。 今天天气很好啊。 今天天气很好啊。今天天气很好啊。";
+/*        SpannableStringBuilder spanBuilder = new SpannableStringBuilder(str);
+
+        *//* 定义两个插入图片的Span *//*
+        ImageSpan imageSpan = new ImageSpan(MainActivity.this,R.drawable.icon01);
+        ImageSpan imageSpan2 = new ImageSpan(MainActivity.this,R.drawable.icon02);
+
+        *//* 定义了一个改变背景色的Span *//*
+        BackgroundColorSpan backgroundColorSpan = new BackgroundColorSpan(Color.parseColor("#00FF00"));
+
+        *//* 定义了一个改变前景色的Span *//*
+        ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(Color.parseColor("#00FFEE"));
+
+        *//*
+        * 定义了一个文字点击的Span,要先设置 android:clickable="true"
+        *//*
+        ClickableSpan clickableSpan = new ClickableSpan() {
+            @Override
+            public void onClick(View widget) {
+                Toast.makeText(MainActivity.this,"你点击了TextView",Toast.LENGTH_SHORT).show();
+            }
+        };
+
+        *//* 添加操作Span *//*
+        spanBuilder.setSpan(imageSpan,8,9, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spanBuilder.setSpan(backgroundColorSpan,8,15, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        spanBuilder.setSpan(imageSpan2,17,18, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spanBuilder.setSpan(foregroundColorSpan,18,25, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        spanBuilder.setSpan(clickableSpan,0,33, Spannable.SPAN_INCLUSIVE_INCLUSIVE);*/
+
+        tv03.setText("spanBuilder.setSpan(imageSpan,8,9, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);");
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

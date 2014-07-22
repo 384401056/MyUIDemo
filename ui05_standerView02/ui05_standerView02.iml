@@ -3,7 +3,7 @@
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
-        <option name="GRADLE_PROJECT_PATH" value=":ui04_starderdview" />
+        <option name="GRADLE_PROJECT_PATH" value=":ui05_standerView02" />
       </configuration>
     </facet>
     <facet type="android" name="Android">
