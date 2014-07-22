@@ -1,1 +1,1 @@
-include ':ui01', ':ui02_drawable', ':ui03_9path', ':ui04_starderdview', ':ui05_standerView02'
+include ':ui01', ':ui02_drawable', ':ui03_9path', ':ui04_starderdview', ':ui05_standerView02', ':ui06_Spinner'
