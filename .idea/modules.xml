@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/ui04_starderdview/ui04_starderdview.iml" filepath="$PROJECT_DIR$/ui04_starderdview/ui04_starderdview.iml" />
       <module fileurl="file://$PROJECT_DIR$/ui05_standerView02/ui05_standerView02.iml" filepath="$PROJECT_DIR$/ui05_standerView02/ui05_standerView02.iml" />
       <module fileurl="file://$PROJECT_DIR$/ui06_Spinner/ui06_Spinner.iml" filepath="$PROJECT_DIR$/ui06_Spinner/ui06_Spinner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui07_listView/ui07_listView.iml" filepath="$PROJECT_DIR$/ui07_listView/ui07_listView.iml" />
     </modules>
   </component>
 </project>

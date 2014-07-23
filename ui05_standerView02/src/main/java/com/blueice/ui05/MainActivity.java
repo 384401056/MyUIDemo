@@ -3,13 +3,18 @@ package com.blueice.ui05;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.RadioGroup;
+import android.widget.RatingBar;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -22,9 +27,12 @@ public class MainActivity extends Activity {
     private Button btn;
     private ToggleButton togBtn;
     private CheckBox cb;
-
     private ProgressBar prg01;
     private SeekBar sbar01;
+    private RatingBar rtb;
+    private EditText et01;
+    private AutoCompleteTextView autoCompleteTextView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +41,10 @@ public class MainActivity extends Activity {
 
         prg01 = (ProgressBar)findViewById(R.id.pg01);
         sbar01 = (SeekBar)findViewById(R.id.sb01);
+        rtb = (RatingBar)findViewById(R.id.ratingBar);
+        et01 = (EditText)findViewById(R.id.et01);
+        autoCompleteTextView = (AutoCompleteTextView)findViewById(R.id.autoComptv);
+
 
         btn = (Button)findViewById(R.id.btn01);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -115,6 +127,62 @@ public class MainActivity extends Activity {
                 Log.i("MyLog", "放开按钮，不拖了......");
             }
         });
+
+
+        /**
+         * RatingBar组件的评级改变事件。
+         */
+        rtb.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+
+                Toast.makeText(MainActivity.this,"星级："+ rating,Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+        /**
+         * EditText 的编辑行为事件监听。
+         * 其中参数，当按下回车时ActionId返回0.
+         */
+        et01.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+
+                Log.i("MyLog","AtionId:"+actionId);
+
+                if(actionId==0){
+                    Toast.makeText(MainActivity.this,"你点了回车。",Toast.LENGTH_SHORT).show();
+                }
+
+                return false;
+            }
+        });
+
+
+
+        /* 实现数据绑定自动完成输入框的步骤与Spinner相同。 */
+
+        /*
+        * 1.建立数据源
+        * 可以在代码中动态建立，也可建为XML文档，再通过getResouce得到。
+        */
+        String[] contries = new String[]{
+           "Ganbin","Gaoanbin","Gaoybin","Gaoyain","Gaanbin","Amrican","Bingo","CanYou","Define","East","Family","Gradle"
+        } ;
+
+        /*
+        * 2.建立Adapter与数据源、布局文件的关联。
+        */
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_spinner_dropdown_item,contries);
+
+        /* 设置AutoCompleteTextView的适配器。 */
+        autoCompleteTextView.setAdapter(adapter);
+
+        /* 默认为输入两个字母后才提示，设为0后只要输入一个字母就能提示了。 */
+        autoCompleteTextView.setThreshold(0);
 
     }
 }

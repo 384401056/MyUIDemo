@@ -1,56 +1,62 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/bg"
-    >
+    android:layout_height="match_parent">
 
-    <TextView
-        android:text="一些常用标准控件的实现"
-        android:layout_margin="10dp"
-        android:textColor="#ff372915"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/btn01"
-        android:layout_margin="10dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="按钮"
-        android:background="@drawable/btn_change"
-        />
-
-    <ToggleButton
-        android:id="@+id/tbtn01"
-        android:layout_margin="10dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:button="@null"
-        android:textOff=""
-        android:textOn=""
-        android:background="@drawable/togglebtn_change"
-        />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text=" 选择框"
-        android:button="@drawable/cb_change"
-        android:id="@+id/checkBox"
-        android:layout_gravity="center_horizontal"
-        />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
         >
+
+        <TextView
+            android:text="一些常用标准控件的实现"
+            android:layout_margin="10dp"
+            android:textColor="#ff372915"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn01"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="按钮"
+            android:background="@drawable/btn_change"
+            />
+
+        <ToggleButton
+            android:id="@+id/tbtn01"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:button="@null"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/togglebtn_change"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text=" 选择框"
+            android:button="@drawable/cb_change"
+            android:id="@+id/checkBox"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -76,28 +82,71 @@
             android:id="@+id/radioButton3"
             android:layout_gravity="center_horizontal"
             />
-    </RadioGroup>
+        </RadioGroup>
 
 
-    <ProgressBar
-        android:id="@+id/pg01"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:progress="0"
-        android:progressDrawable="@drawable/progress"
-        />
+        <ProgressBar
+            android:id="@+id/pg01"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress"
+            />
 
-    <SeekBar
-        android:id="@+id/sb01"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:thumb="@drawable/thumd"
-        android:progress="50"
-        android:progressDrawable="@drawable/seekbar"
-        />
-</LinearLayout>
+        <SeekBar
+            android:id="@+id/sb01"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumd"
+            android:progress="50"
+            android:progressDrawable="@drawable/seekbar"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:numStars="5"
+            android:stepSize="1"
+            android:progressDrawable="@drawable/ratingbar"
+            />
+        <!-- 使用shape来画出背景 -->
+        <EditText
+            android:id="@+id/et01"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:drawablePadding="10dp"
+            android:hint="请输入数字"
+            android:textColorHint="#ffe5e2df"
+            android:inputType="number"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/etimg"
+            android:background="@drawable/et_shape"
+            />
+
+        <!-- 使用图片来当背景样式 -->
+        <AutoCompleteTextView
+            android:id="@+id/autoComptv"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:hint="自动完成输入框"
+            android:textColorHint="#ffe5e2df"
+            android:inputType="text"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/etimg2"
+            android:background="@drawable/et_bg"
+            />
+
+    </LinearLayout>
+</ScrollView>
