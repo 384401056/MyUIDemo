@@ -9,7 +9,10 @@
       <module fileurl="file://$PROJECT_DIR$/ui04_starderdview/ui04_starderdview.iml" filepath="$PROJECT_DIR$/ui04_starderdview/ui04_starderdview.iml" />
       <module fileurl="file://$PROJECT_DIR$/ui05_standerView02/ui05_standerView02.iml" filepath="$PROJECT_DIR$/ui05_standerView02/ui05_standerView02.iml" />
       <module fileurl="file://$PROJECT_DIR$/ui06_Spinner/ui06_Spinner.iml" filepath="$PROJECT_DIR$/ui06_Spinner/ui06_Spinner.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/ui07_listView/ui07_listView.iml" filepath="$PROJECT_DIR$/ui07_listView/ui07_listView.iml" />
+=======
+>>>>>>> d7ca10014caf005e912af579a4be18089fc80db1
     </modules>
   </component>
 </project>

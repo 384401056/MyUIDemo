@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 include ':ui01', ':ui02_drawable', ':ui03_9path', ':ui04_starderdview', ':ui05_standerView02', ':ui06_Spinner', ':ui07_listView'
+=======
+include ':ui01', ':ui02_drawable', ':ui03_9path', ':ui04_starderdview', ':ui05_standerView02', ':ui06_Spinner'
+>>>>>>> d7ca10014caf005e912af579a4be18089fc80db1
