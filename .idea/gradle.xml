@@ -14,7 +14,10 @@
             <option value="$PROJECT_DIR$/ui04_starderdview" />
             <option value="$PROJECT_DIR$/ui05_standerView02" />
             <option value="$PROJECT_DIR$/ui06_Spinner" />
+<<<<<<< HEAD
             <option value="$PROJECT_DIR$/ui07_listView" />
+=======
+>>>>>>> d7ca10014caf005e912af579a4be18089fc80db1
           </set>
         </option>
       </GradleProjectSettings>
