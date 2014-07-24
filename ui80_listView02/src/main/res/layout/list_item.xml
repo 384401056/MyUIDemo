@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/lsit_tv01"
+        android:textColor="#ff94867d"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:text="@string/hello_world"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/items_img"
+        android:drawablePadding="30dp"
+        android:background="@drawable/item_selector"
+        />
+
+    <LinearLayout
+        android:id="@+id/list_linear01"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_orange_light"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/list_tv02"
+            android:text="@string/hello_world"
+            android:textSize="12sp"
+            android:textColor="#ffca4a00"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <!--<Button-->
+            <!--android:id="@+id/list_btn01"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Button"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+
+        <ImageView
+            android:id="@+id/list_img01"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/items_img"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+</LinearLayout>
