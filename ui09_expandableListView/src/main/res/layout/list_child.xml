@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/holo_green_light"
+    android:gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/child_btn01"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn01_selector"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+        />
+        <TextView
+            android:id="@+id/child_tv01"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10sp"
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/child_btn02"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn02_selector"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+        <TextView
+            android:id="@+id/child_tv02"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10sp"
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/child_btn03"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn03_selector"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+        <TextView
+            android:id="@+id/child_tv03"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10sp"
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
