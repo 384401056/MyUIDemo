@@ -19,7 +19,6 @@ import android.widget.Toast;
 
 import org.xml.sax.XMLReader;
 
-import java.util.MissingFormatArgumentException;
 
 
 public class MainActivity extends Activity {
