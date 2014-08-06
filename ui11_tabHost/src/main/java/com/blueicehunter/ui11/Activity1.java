@@ -8,6 +8,8 @@ import com.blueicehunter.ui11.R;
 
 public class Activity1 extends Activity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
