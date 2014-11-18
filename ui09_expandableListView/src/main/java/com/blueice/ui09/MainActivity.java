@@ -35,12 +35,10 @@ public class MainActivity extends ExpandableListActivity {
 
         etv = getExpandableListView();
 
-
-
         etv.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                Log.i("MyLog",v.toString());
+
                 return false;
             }
         });
@@ -48,7 +46,7 @@ public class MainActivity extends ExpandableListActivity {
         etv.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
             public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
-                Log.i("MyLog",v.toString());
+
                 return false;
             }
         });
